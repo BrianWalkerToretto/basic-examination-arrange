@@ -1,4 +1,5 @@
 module.exports = {
+  noUseConfigFile: true,
 	name: '9', //几年级
 	time: '19127', // 9年级1班19年12月7号16考场01考号
   dir: 'test', // 成绩表目录（导入目录）

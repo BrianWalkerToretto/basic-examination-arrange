@@ -13,8 +13,9 @@ const files = readFile(path.join(`${__dirname}/${config.dir}`), config.fileType)
 const gradeData = execl(files); // execl数据
 
 // 计算：每个班级在每个考场的人数安排
+const readArrange = require('./utils/readArrange');
 const getClassArrange = require('./utils/getClassArrange'); 
-const arr = getClassArrange(gradeData);
+const arr = config.noUseConfigFile ? getClassArrange(gradeData) : readArrange(path.join(`${__dirname}/arrange.xls`));
 console.log(arr);
 
 // 计算：每个考场的学生安排
