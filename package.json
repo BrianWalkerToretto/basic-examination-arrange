@@ -1,0 +1,24 @@
+{
+  "name": "basic-examination-arrange",
+  "version": "1.0.0",
+  "description": "简单考场安排：导出考场安排execl表格",
+  "main": "index.js",
+  "scripts": {
+    "build": "rimraf ./result && node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BrianWalkerToretto/basic-examination-arrange.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BrianWalkerToretto/basic-examination-arrange/issues"
+  },
+  "homepage": "https://github.com/BrianWalkerToretto/basic-examination-arrange#readme",
+  "devDependencies": {
+    "node-xlsx": "^0.15.0",
+    "rimraf": "^3.0.0"
+  }
+}
